@@ -13,58 +13,44 @@ body{
   justify-content: center;
   align-items: center;
   width: 100vw;
+  height: 100vh;
   flex-wrap: wrap;
   gap: 20px;
 }
-
-.card{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 16px;
-
+.card {
   border: 1px solid white;
-  border-radius: 15px;
-  box-shadow: 5px 5px white;
-  width: 500px;
-  height: 400px;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 4px 4px white;
+  text-align: center;
   cursor: pointer;
 }
 
-.card > h2{
-  padding-left: 17px;
+.card > h2 {
   font-size: 32px;
-  color: white;
-  border-left: 6px solid white;
-  
+  border-left: 6px solid #A9D3E9;
+  color: #A9D3E9;
+  margin-bottom: 10px;
 }
 
-.card::hover{
-  cursor: pointer;
+.card > img {
+  border-radius: 10px;
 }
 
-.img-card{
-  margin: 1em 0;
-  border-radius: 15px;
-  width: 50%;
-}
-
-.tag-pai{
+.tag-pai {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 18px 0;
-  width: 50%;
+  margin-bottom: 24px;
+  max-width: 300px;
   justify-content: center;
 }
 
-.tag{
+.tag {
   background: white;
-  border-radius: 4px;
-  padding: 4px 12px;
   color: black;
-  font-weight: bold;
   font-size: 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 4px 12px;
 }
