@@ -28,7 +28,7 @@ function App() {
         <Card item={item2} />
         <Card item={item3} /> */}
         {
-          itens.map(item => <Card item = {item}/>)
+          itens.map((item, i) => <Card item = {item} key={i}/>)
         }
       </div>
     </>
