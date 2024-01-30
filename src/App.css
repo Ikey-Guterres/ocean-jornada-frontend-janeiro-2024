@@ -7,6 +7,7 @@ body{
   background-color: #252425;
   
 }
+
 #root{
   display: flex;
   justify-content: center;
@@ -21,26 +22,49 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
+  padding: 16px;
 
   border: 1px solid white;
   border-radius: 15px;
   box-shadow: 5px 5px white;
   width: 500px;
   height: 400px;
+  cursor: pointer;
+}
+
+.card > h2{
+  padding-left: 17px;
+  font-size: 32px;
+  color: white;
+  border-left: 6px solid white;
   
 }
-.card > h2{
-  text-align: center;
-  font-size: 2.5em;
-  color: white;
-  border-left: 5px solid white;
-  padding-left: 15px;
-}
+
 .card::hover{
   cursor: pointer;
 }
+
 .img-card{
   margin: 1em 0;
   border-radius: 15px;
   width: 50%;
+}
+
+.tag-pai{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0;
+  width: 50%;
+  justify-content: center;
+}
+
+.tag{
+  background: white;
+  border-radius: 4px;
+  padding: 4px 12px;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
 }
