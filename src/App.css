@@ -3,20 +3,30 @@
   box-sizing: border-box;
 }
 
+
 body{
   background-color: #252425;
-  
+  height: 100%;
 }
 
 #root{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   flex-wrap: wrap;
   gap: 20px;
 }
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin: 16px;
+}
+
 .card {
   border: 1px solid white;
   border-radius: 10px;
