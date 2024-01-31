@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import './App.css'
 import Card from './components/Card/Card'
+import { useEffect } from 'react'
 
 function App() {
   //Carregamento de dados direto via código
@@ -46,8 +47,13 @@ function App() {
     um card para cada item da API e depois subir o
     site na nuvem */
   }
+  //protegendo o carregamento de dados para
+  //chamar uma vez
+  useEffect(function() {
+    carregarDadosAPI()
+  }, [])
 
-  carregarDadosAPI()
+
   return (
     <>
       <div className="cards">
